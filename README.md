@@ -21,6 +21,6 @@ The density operator in the code has the convention $|1\rangle$ as the excited s
 
 |Code|Paper|
 |-----|-----|
-|$|1\rangle$|$|2\rangle$|
-|$|2\rangle$|$|3\rangle$|
-|$|3\rangle$|$|1\rangle$|
+|$\|1\rangle$|$\|2\rangle$|
+|$\|2\rangle$|$\|3\rangle$|
+|$\|3\rangle$|$\|1\rangle$|
