@@ -8,9 +8,9 @@ if __name__ == "__main__":
     #begin plots for closed system dynamics
     for param in params:
         
-        with open("Data\{}_dynamics_closed".format(param),"rb") as file:
+        with open("Data/{}_dynamics_closed".format(param),"rb") as file:
             times,data = pickle.load(file)
-        with open("Data\{}_dynamics_RWA_closed".format(param),"rb") as file:
+        with open("Data/{}_dynamics_RWA_closed".format(param),"rb") as file:
             times,RWA_data = pickle.load(file)
         
         n=0
@@ -24,9 +24,9 @@ if __name__ == "__main__":
         plot.make_off_diag_plots_tilde_both(new_times[:-1],data[0][0][:-1]@new_matrix,RWA_data[0][0][:-1]@new_RWA_matrix,"lambda",save_name=save_name,legend_fontsize=18)
         
         
-        with open("Data\{}_dynamics".format(param),"rb") as file:
+        with open("Data/{}_dynamics".format(param),"rb") as file:
             times,data = pickle.load(file)
-        with open("Data\{}_dynamics_RWA".format(param),"rb") as file:
+        with open("Data/{}_dynamics_RWA".format(param),"rb") as file:
             times,RWA_data = pickle.load(file)
         
         n=0
