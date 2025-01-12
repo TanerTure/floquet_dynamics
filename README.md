@@ -17,7 +17,7 @@ Plots are made using the corresponding .py file that begin with **plotting**: (p
 The code concerning the Magnus Expansion propagators can be found in `Magnus_Expansion.py`. The system parameters are defined in `ME_params.py`. Other commonly used functions for the dynamics (such as taking advantage of the Floquet time evolution, or transformation to the rotating frame) are defined in `dynamics_functions.py`. Helper functions for making the plots can be found in `plotting_functions.py`. 
 
 ## Code Convention
-The density operator in the code has the convention $|1\rangle$ as the excited state, $|2\rangle$ as the state coupled by the control pulse $\omega_c$, and $|3\rangle$ as the state coupled by the probe pulse $\omega_p$. This is a less used convention, and different from the [main paper](arxiv.org/abs/2407.03576). These differences are summarized in the following table. 
+The density operator in the code has the convention $|1\rangle$ as the excited state, $|2\rangle$ as the state coupled by the control pulse $\omega_c$, and $|3\rangle$ as the state coupled by the probe pulse $\omega_p$. This is a less used convention, and different from the [main paper](https://arxiv.org/abs/2407.03576). These differences are summarized in the following table. 
 
 |Code|Paper|
 |-----|-----|
