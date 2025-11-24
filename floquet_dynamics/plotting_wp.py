@@ -3,7 +3,7 @@ import pickle
 import plotting_functions as plot
 
 if __name__ == "__main__":
-    fontsize=18
+    fontsize=20
     with open("Data/A_wp","rb") as file:
         times,steady_state_data = pickle.load(file)
     with open("Data/A_wp_RWA","rb") as file:
@@ -20,7 +20,7 @@ if __name__ == "__main__":
         times,steady_state_data = pickle.load(file)
     with open("Data/C_wp_RWA","rb") as file:
         times,steady_state_data_RWA = pickle.load(file)
-    plot.steady_state_wp_plots(steady_state_data_RWA,steady_state_data,Hamiltonian="lambda",save_name="TPR_C",params="TPR_C",legend_fontsize=fontsize)
+    plot.steady_state_wp_plots(steady_state_data_RWA,steady_state_data,Hamiltonian="lambda",save_name="TPR_C",params="TPR_C",legend_fontsize=fontsize, ncol=[1,1,2,1])
     
     
     
