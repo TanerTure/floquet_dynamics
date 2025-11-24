@@ -1,12 +1,19 @@
+'''
+    Runs the dynamics using either the sixth or fourth-order ME to the desired t_final. Produces data files 
+    using pickle, which stores the list times with dimension [num_points], and the list of lists data with dimension 
+    [1,1, (num_points,9,9)]. The parentheses represent the ndarray within. 
+
+'''
+import numpy as np
+import pickle
+
 import Magnus_Expansion as ME
 import ME_params
 import dynamics_functions as funcs
-import pickle
-import numpy as np
 
 #num_point = 2**13
 #t_final = 16 *np.pi
-num_point = 2**10
+num_point = 2**12 #2**11
 t_final = 2*np.pi
 
 if __name__ == "__main__":
